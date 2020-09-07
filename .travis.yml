@@ -4,8 +4,8 @@ stages:
  - lint
 
 jobs:
- includes:
- - name: Eslint
-  stage: lint
-  install: npm install
-  script: npm lint
+  include:
+  - name: Eslint
+    stage: lint
+    install: npm install
+    script: npm lint
