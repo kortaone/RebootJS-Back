@@ -8,4 +8,4 @@ jobs:
   - name: Eslint
     stage: lint
     install: npm install
-    script: npm lint
+    script: npm run build
